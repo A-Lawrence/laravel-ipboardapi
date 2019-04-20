@@ -22,11 +22,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->mergeConfigFrom($this->getConfigPath(), 'ipboard');
 
-        $this->app['ipboard'] = $this->app->share(function($app){
+        $this->app->singleton('ipboard', function($app){
             return new Ipboard();
         });
 
-        $this->app['command.ipboard.test'] = $this->app->share(
+        $this->app->singleton('command.ipboard.test', 
             function ($app) {
                 return new Console\TestCommand($app['ipboard']);
             }
