@@ -1,5 +1,7 @@
-<?php namespace Alawrence\Ipboard\Exceptions;
+<?php
 
-class InvalidFormat extends \Exception {
+namespace Alawrence\Ipboard\Exceptions;
 
+class InvalidFormat extends \Exception
+{
 }

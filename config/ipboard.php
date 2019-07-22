@@ -7,7 +7,7 @@
  */
 
 return [
-    "api_url" => "http://my.website.com/api/",
-    "api_key" => "YOUR_API_KEY_SHOULD_BE_PLACED_HERE",
-    "api_reference_name" => "SOME_REFERENCE",
+    'api_url'            => 'http://my.website.com/api/',
+    'api_key'            => 'YOUR_API_KEY_SHOULD_BE_PLACED_HERE',
+    'api_reference_name' => 'SOME_REFERENCE',
 ];

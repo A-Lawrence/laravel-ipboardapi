@@ -1,5 +1,7 @@
-<?php namespace Alawrence\Ipboard\Exceptions;
+<?php
 
-class IpboardThrottled extends \Exception {
+namespace Alawrence\Ipboard\Exceptions;
 
+class IpboardThrottled extends \Exception
+{
 }

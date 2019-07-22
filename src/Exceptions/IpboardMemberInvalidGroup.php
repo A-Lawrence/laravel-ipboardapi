@@ -1,6 +1,7 @@
-<?php namespace Alawrence\Ipboard\Exceptions;
+<?php
+
+namespace Alawrence\Ipboard\Exceptions;
 
 class IpboardMemberInvalidGroup extends \Exception
 {
-
 }

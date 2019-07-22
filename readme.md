@@ -17,9 +17,19 @@ Require this package with composer:
 composer require alawrence/laravel-ipboard
 ```
 
-After updating composer, add this package's ServiceProvider to the providers array in config/app.php
+###  Laravel 5.5:
+
+In order to set the required variables for your instance of IPBoard, you must first publish the configuration files:
+
+```
+php artisan vendor:publish
+```
+
+Then, edit your API key and IP.Board URL into config/ipboard.php
 
 ### < Laravel 5.4:
+
+After updating composer, add this package's ServiceProvider to the providers array in config/app.php
 
 ServiceProvider:
 ```php
@@ -36,6 +46,8 @@ In order to set the required variables for your instance of IPBoard, you must fi
 ```
 php artisan vendor:publish
 ```
+
+Then, edit your API key and IP.Board URL into config/ipboard.php
 
 ## Usage
 
